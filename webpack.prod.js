@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
   output: {
-    publicPath: '/calc-ya-later/',
+    publicPath: '/sign-up-form/',
   },
   mode: 'production',
   devtool: 'source-map',
