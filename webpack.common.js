@@ -34,13 +34,13 @@ module.exports = {
       },
       { test: /\.html$/i, use: 'html-loader' },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|aif|ico)$/i,
+        test: /\.(png|svg|jpe?g|[ga]if|ico)$/i,
         type: 'asset/resource',
         generator: { filename: 'images/[name].[hash][ext]' },
         include: [path.resolve(__dirname, 'src/images')],
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)$/i,
+        test: /\.(woff2?|eot|[to]tf)$/i,
         type: 'asset/resource',
         generator: { filename: 'fonts/[name].[hash][ext]' },
       },
