@@ -11,12 +11,12 @@
             <div class="section__cover-container">
                 <div class="section__logo-overlay">
                     <img 
-                        src="./images/odin-lined.png"
+                        src="<%=require('./images/odin-lined.png')%>"
                         alt="Логотип Odin"
                         class="section__logo"
                     >
 
-                    <p class="section__logo-text">odin</p>
+                    <p class="section__logo-text">ODIN</p>
                 </div>
 
                 <p class="section__photo-description">
@@ -41,6 +41,7 @@
                     </a>
                 </p>
             </div>
+
             <div class="section__form-container">
                 <div class="section__header">
                     <p class="section__text">
@@ -54,48 +55,61 @@
                     </p>
                 </div>
 
-                <div class="form">
-                    <h3 class="form__title">Сделай это!</h3>
-                    <form action="" class="form__container">
-                        <fieldset class="form__fieldset">
-                            <label for="firstName">Ваше имя</label>
-                            <input type="text" class="form__input" id="firstName">
+                <form action="" name="registration" class="form section__form">
+                    <div class="form__container">
+                        <h3 class="form__title">Сделай это!</h3>
 
-                            <label for="lastName">Ваша фамилия</label>
-                            <input type="text" class="form__input" id="lastName">
+                        <fieldset class="form__fieldset">
+                            <label class="form__group-input">
+                                <span class="form__label">Ваше имя</span>
+                                <input type="text" class="form__input" id="firstName">
+                            </label>
+                            
+                            <label class="form__group-input">
+                                <span class="form__label">Ваша фамилия</span>
+                                <input type="text" class="form__input" id="lastName">
+                            </label>
                         </fieldset>
 
                         <fieldset class="form__fieldset">
-                            <label for="email">Email</label>
-                            <input type="text" class="form__input" id="email">
+                            <label class="form__group-input">
+                                <span class="form__label">Email</span>
+                                <input type="email" class="form__input" id="email">
+                            </label>
 
-                            <label for="phone">Номер телефона</label>
-                            <input type="text" class="form__input" id="phone">
+                            <label class="form__group-input">
+                                <span class="form__label">Номер телефона</span>
+                                <input type="tel" class="form__input" id="phone">
+                            </label>
                         </fieldset>
 
                         <fieldset class="form__fieldset">
-                            <label for="pass">Ваше имя</label>
-                            <input type="text" class="form__input" id="pass">
+                            <label class="form__group-input">
+                                <span class="form__label">Придумайте пароль</span>
+                                <input type="password" class="form__input" id="pass">
+                            </label>
 
-                            <label for="passConfirm">Ваше имя</label>
-                            <input type="text" class="form__input" id="passConfirm">
+                            <label class="form__group-input">
+                                <span class="form__label">Подтвердите пароль</span>
+                                <input type="password" class="form__input" id="passConfirm">
+                            </label>
                         </fieldset>
-                    </form>
-                </div>
+                    </div>
 
-                <div class="section__footer">
-                    <button class="button">
-                        Создать аккаунт
-                    </button>
-                    
-                    <p class="section__description">
-                        Уже есть аккаунт? 
+                    <div class="form__button-container">
+                        <button class="form__button">
+                            Создать аккаунт
+                        </button>
                         
-                        <a href="#" class="section__link-login">
-                            Войти
-                        </a>
-                    </p>
-                </div>
+                        <p class="form__description">
+                            Уже есть аккаунт? 
+                            
+                            <a href="#" class="form__link-login">
+                                Войти
+                            </a>
+                        </p>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

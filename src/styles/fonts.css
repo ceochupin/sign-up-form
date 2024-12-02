@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Norse';
+    src: 
+        url('../fonts/Norse-700.woff2') format('woff2'),
+        url('../fonts/Norse-700.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-400.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-600.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-900.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}

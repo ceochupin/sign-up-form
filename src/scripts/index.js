@@ -1,5 +1,5 @@
-import '../styles/fonts.scss';
-import '../styles/global.scss';
-import '../styles/style.scss';
+import '../styles/fonts.css';
+import '../styles/global.css';
+import '../styles/style.css';
 
 import './script.js';
